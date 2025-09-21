@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Film list */
+#film-list {
+    list-style: none;
+    width: 200px;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#film-list li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#film-list li:hover {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+/* Film details */
+#film-details {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+#film-details img {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+}
+
+#film-details h2 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#film-details p {
+    margin-bottom: 8px;
+}
+
+/* Buy Ticket Button */
+#buy-ticket-btn {
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#buy-ticket-btn:hover:enabled {
+    background-color: #ff3b2f;
+}
+
+#buy-ticket-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #444;
+    color: #888;
+}
+
+/* Scrollbar styling for film list */
+#film-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#film-list::-webkit-scrollbar-thumb {
+    background-color: #ff6f61;
+    border-radius: 3px;
+}
